@@ -133,8 +133,8 @@ function renderQuestion() {
 function selectOption(index) {
   selectedOption = index;
   const options = document.querySelectorAll(".option");
-  options.forEach((opt, i) => {
-    opt.classList.toggle("selected", i === index);
+  options.forEach((option, i) => {
+    option.classList.toggle("selected", i === index);
   });
   document.getElementById("next-btn").disabled = false;
 }
